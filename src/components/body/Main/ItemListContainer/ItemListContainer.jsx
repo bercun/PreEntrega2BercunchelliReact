@@ -1,5 +1,6 @@
-import { productosEnLoad, productosPrLoad } from "../../asyncMocks";
-import { ItemCount } from "../../header/carrito/carrito";
+import { productosEnLoad, productosPrLoad } from "../../../../Data/asyncMocks";
+import { ItemCount } from "../../../Header/Carrito/Carrito";
+
 
 import { useState, useEffect } from "react";
 
