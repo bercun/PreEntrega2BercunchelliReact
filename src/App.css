@@ -44,7 +44,7 @@ body {
 }
 
 /* fin de barra de navegacion */
-.form-control-w5 {
+ .form-control-w5 {
     width: 3rem !important;
     display: block;
     width: 100%;
@@ -64,7 +64,7 @@ body {
 }
 
 /* inicio de banner */
-.Jumbotron {
+ .Jumbotron {
     height: 400px;
     background-image: url(../public/img/pan_dulce_duo-min.webp);
     font-weight: bolder;
@@ -74,11 +74,11 @@ body {
 
 .sombras {
     text-shadow: 0 0 5px black;
-}
+} 
 
 /* fin de banner */
 /* inicio de banner logo*/
-.jumbotron-logo {
+ .jumbotron-logo {
     height: 400px;
     max-width: 800px;
     background-image: url(../img/logoObrador.png);
@@ -86,7 +86,7 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-}
+} 
 
 .bg-primary {
     background-color: #ffffff !important;
@@ -99,17 +99,17 @@ body {
 
 /* fin de banner */
 /* inicio del carrousel */
-carrousel {
+/* carrousel {
     width: 100vw;
 }
 
 .carousel-item {
     width: 100vw;
     max-height: 500px;
-}
+} */
 
 /* fin del carrousel */
-.img-about {
+/* .img-about {
     width: 70vw;
     height: 80vh;
     border: 0px solid #F20707;
@@ -120,7 +120,7 @@ carrousel {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 80px;
-}
+}  */
 
 /* inicio de presentacion de productos */
 .prod-left {

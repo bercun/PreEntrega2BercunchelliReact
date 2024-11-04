@@ -1,22 +1,29 @@
 
 
 
-export default function Item({titulo, description, botonlink}) {
-
-
+ function Item() {
 
     return (
         <>
-            <div>
-                <img src="src/assets/img/pan_dulce_duo-min.webp" className="card-img-top" alt="..."></img>
-                <div className="card-body">
-                    <h5 className="card-title">{titulo}</h5>
-                    <p className="card-text">{description}</p>
-                    <a href="#" className="btn btn-primary">{botonlink}</a>
+             <h2 className="text-center mb-4 mt-4">Productos</h2>
+                <div className="container">
+                    <div className="conteiner-fluid">
+                        <div className="row">
+                            <div className="prod-left col-sm-6 col-lg-3 col-xl-2"></div>
+                                <div className="prod-right col-sm-6 col-lg-3 col-xl-2 ">
+                                </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
 
         </>
     )
 }
+                                    
+
+
+export default Item
+                                
+                               
+                            
