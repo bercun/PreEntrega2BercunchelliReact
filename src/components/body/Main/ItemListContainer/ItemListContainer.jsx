@@ -19,40 +19,10 @@ function ItemListContainer() {
     });
   }, []);
 
-
-console.log(productosEn);
-
   return (
     <>
-    <div className="container">
-      <h2>Entrantes</h2>
-      {productosEn.map((producto) => {
-        return (
-          <div key={producto.id}>
-            <h3>{producto.nombre}</h3>
-            <p>{producto.descripcion}</p>
-            <p>{producto.precio}</p>
-            <button>comprar</button>
-          </div>
-        );
-
-      }, )}
-      </div>
-      <div className="container"> 
-      <h2>Principales</h2>
-      {productosPr.map((producto) => {
-        return (
-          <div key={producto.id}>
-            <h3>{producto.nombre}</h3>
-            <p>{producto.descripcion}</p>
-            <p>{producto.precio}</p>
-            <button>comprar</button>
-          </div>
-        );
-
-      }, )}
-      </div>
-    <Item/>
+   
+    <Item productosEn={productosEn} productosPr={productosPr}/>
     </>
   )
 }
