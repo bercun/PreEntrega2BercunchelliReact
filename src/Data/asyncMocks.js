@@ -16,14 +16,14 @@ export const productosEnLoad = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(productosEn);
-        }, 2000);
+        }, 500);
     });
 }
 export const productosPrLoad = () => {  
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(productosPr);
-        }, 2000);
+        }, 500);
     });
 }
    
