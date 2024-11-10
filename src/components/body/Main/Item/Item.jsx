@@ -14,7 +14,9 @@ function Item({ productos, }) {
                                     <h3 className="card-title">{producto.nombre}</h3>
                                     <p className="card-text">{producto.descripcion}</p>
                                     <p className="card-text">{producto.precio}</p>
-                                    <button className="btn btn-primary">Comprar</button>
+                                    <button className="btn btn-primary" style={{margin: '0.5rem'}}>Comprar</button>
+                                    <button className="btn btn-primary">detalle</button>
+                                    <button className="btn btn-primary" style={{margin: '0.5rem'}}>categoria</button>
                                 </div>
                             </div>
                         </div>

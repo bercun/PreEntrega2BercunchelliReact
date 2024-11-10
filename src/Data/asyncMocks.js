@@ -90,38 +90,6 @@
         "categoria": "principal" },            
 ];
 
-// const productosPr = [
-//     { 
-//         "id": 11,
-//         "nombre": "Raviolones de espinaca",
-//         "img": "./img/tarta_costado-min.webp", 
-//         "descripcion": "Raviolones rellenos de espinaca, ricotta y parmesano con masa de tomates secos", 
-//         "precio": 560,
-//         "categoria": "principal" },
-//     { 
-//         "id": 12, "nombre": 
-//         "Lasaña de pollo y verduras", 
-//         "img": "./img/logoObrador.png", "descripcion": 
-//         "Lasaña artesanal, de supremas de pollos cocidas al tomillo y verduras de temporada", 
-//         "precio": 250,
-//         "categoria": "principal" },
-//     { 
-//         "id": 13, "nombre": 
-//         "Milanesas de carne", 
-//         "img": "./img/logoObrador.png", 
-//         "descripcion": "Milanesas de novillo, empanadas con nuestra mezcla especial de pan rallado sin gluten", 
-//         "precio": 550,
-//         "categoria": "principal" },
-    
-//     { 
-//         "id": 14, 
-//         "nombre": "Strudel de verduras", 
-//         "img": "./img/logoObrador.png", 
-//         "descripcion": "Strudel, con masa de hojaldre artesanal y relleno de verduras de temporada", 
-//         "precio": 550,
-//         "categoria": "principal" },
-// ]; 
-
 
 export const productosEnLoad = () => {
     return new Promise((resolve, reject) => {
@@ -129,12 +97,26 @@ export const productosEnLoad = () => {
             resolve(productos);
         }, 500);
     });
+};
+
+
+ export const productosById = ({id}) => { 
+        const productosid = productos.find(producto => producto.id === id);
+     return new Promise((resolve, reject) => {
+         setTimeout(() => {
+             resolve(productosid);
+         }, 500);
+     });
+ }
+
+ export const productosByCategoria = ({categoria}) => { 
+    const productosCategoria = productos.filter(producto => producto.categoria === categoria);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(productosCategoria);
+        }, 500);    
+    }
+    );
 }
-// export const productosPrLoad = () => {  
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve(productosPr);
-//         }, 500);
-//     });
-// }
+
    

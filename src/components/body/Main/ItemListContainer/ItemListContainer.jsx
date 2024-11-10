@@ -1,18 +1,36 @@
 import { useEffect, useState } from "react"
 import Item from "../Item/Item"
-import {productosEnLoad,} from "../../../../Data/asyncMocks"
+import {productosEnLoad, productosById, productosByCategoria} from "../../../../Data/asyncMocks"
 
 
 
 
 function ItemListContainer() {
 
- const [productos, setproductos]= useState([])
- 
-  useEffect(() => {   
+ const [productos, setproductos]= useState([]);
+ const [id, setId]= useState(0);
+ const [byCategoria, setByCategoria]= useState("");
+  
+ useEffect(() => {   
     productosEnLoad().then((data) => {
       setproductos(data);
     });
+  }
+  , []);
+
+ 
+    useEffect(() => {   
+    productosById({id}).then((data) => {
+      setId(data);
+    });
+  }
+  , []);
+
+ 
+    useEffect(() => {
+    productosByCategoria({setByCategoria}).then((data) => { 
+      setByCategoria(data);
+    }); 
   
   }
   , []);
