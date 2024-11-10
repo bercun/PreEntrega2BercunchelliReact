@@ -4,7 +4,7 @@ function Item({ productos, }) {
     return (
         <>
             <div className="container">
-                <h2>Entrantes</h2>
+                <h2 className="p-4" >Nuestros productos</h2>
                 <div className="row">
                     {productos.map((producto) => (
                         <div key={producto.id} className="col-12 col-md-6 col-lg-4 mb-4">
