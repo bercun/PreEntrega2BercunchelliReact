@@ -1,4 +1,4 @@
- const productosEn = [
+ const productos = [
     { 
         "id": 1, 
         "nombre": "Carpacio de gambas", 
@@ -27,26 +27,24 @@
         "img": "./img/pastafrola_cerca-min.webp",
         "descripcion": "Pan de molde, de 600gr, con sésamo, lino, chía y avena",
         "precio": 550,
-        "categoria": "entrantes"}
-];
-
-const productosPr = [
+        "categoria": "entrantes"},
+    
     { 
-        "id": 11,
+        "id": 5,
         "nombre": "Raviolones de espinaca",
         "img": "./img/tarta_costado-min.webp", 
         "descripcion": "Raviolones rellenos de espinaca, ricotta y parmesano con masa de tomates secos", 
         "precio": 560,
         "categoria": "principal" },
     { 
-        "id": 12, "nombre": 
+        "id": 6, "nombre": 
         "Lasaña de pollo y verduras", 
         "img": "./img/logoObrador.png", "descripcion": 
         "Lasaña artesanal, de supremas de pollos cocidas al tomillo y verduras de temporada", 
         "precio": 250,
         "categoria": "principal" },
     { 
-        "id": 13, "nombre": 
+        "id": 7, "nombre": 
         "Milanesas de carne", 
         "img": "./img/logoObrador.png", 
         "descripcion": "Milanesas de novillo, empanadas con nuestra mezcla especial de pan rallado sin gluten", 
@@ -54,27 +52,89 @@ const productosPr = [
         "categoria": "principal" },
     
     { 
-        "id": 14, 
+        "id": 8, 
         "nombre": "Strudel de verduras", 
         "img": "./img/logoObrador.png", 
         "descripcion": "Strudel, con masa de hojaldre artesanal y relleno de verduras de temporada", 
         "precio": 550,
         "categoria": "principal" },
-]; 
+        
+    { 
+        "id": 9,
+        "nombre": "Raviolones de espinaca",
+        "img": "./img/tarta_costado-min.webp", 
+        "descripcion": "Raviolones rellenos de espinaca, ricotta y parmesano con masa de tomates secos", 
+        "precio": 560,
+        "categoria": "principal" },
+    { 
+        "id": 10, "nombre": 
+        "Lasaña de pollo y verduras", 
+        "img": "./img/logoObrador.png", "descripcion": 
+        "Lasaña artesanal, de supremas de pollos cocidas al tomillo y verduras de temporada", 
+        "precio": 250,
+        "categoria": "principal" },
+    { 
+        "id": 11, "nombre": 
+        "Milanesas de carne", 
+        "img": "./img/logoObrador.png", 
+        "descripcion": "Milanesas de novillo, empanadas con nuestra mezcla especial de pan rallado sin gluten", 
+        "precio": 550,
+        "categoria": "principal" },
+    
+    { 
+        "id": 12, 
+        "nombre": "Strudel de verduras", 
+        "img": "./img/logoObrador.png", 
+        "descripcion": "Strudel, con masa de hojaldre artesanal y relleno de verduras de temporada", 
+        "precio": 550,
+        "categoria": "principal" },            
+];
+
+// const productosPr = [
+//     { 
+//         "id": 11,
+//         "nombre": "Raviolones de espinaca",
+//         "img": "./img/tarta_costado-min.webp", 
+//         "descripcion": "Raviolones rellenos de espinaca, ricotta y parmesano con masa de tomates secos", 
+//         "precio": 560,
+//         "categoria": "principal" },
+//     { 
+//         "id": 12, "nombre": 
+//         "Lasaña de pollo y verduras", 
+//         "img": "./img/logoObrador.png", "descripcion": 
+//         "Lasaña artesanal, de supremas de pollos cocidas al tomillo y verduras de temporada", 
+//         "precio": 250,
+//         "categoria": "principal" },
+//     { 
+//         "id": 13, "nombre": 
+//         "Milanesas de carne", 
+//         "img": "./img/logoObrador.png", 
+//         "descripcion": "Milanesas de novillo, empanadas con nuestra mezcla especial de pan rallado sin gluten", 
+//         "precio": 550,
+//         "categoria": "principal" },
+    
+//     { 
+//         "id": 14, 
+//         "nombre": "Strudel de verduras", 
+//         "img": "./img/logoObrador.png", 
+//         "descripcion": "Strudel, con masa de hojaldre artesanal y relleno de verduras de temporada", 
+//         "precio": 550,
+//         "categoria": "principal" },
+// ]; 
 
 
 export const productosEnLoad = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(productosEn);
+            resolve(productos);
         }, 500);
     });
 }
-export const productosPrLoad = () => {  
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(productosPr);
-        }, 500);
-    });
-}
+// export const productosPrLoad = () => {  
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(productosPr);
+//         }, 500);
+//     });
+// }
    

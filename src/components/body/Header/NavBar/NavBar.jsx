@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 function NavBar() {
 
@@ -16,22 +16,20 @@ function NavBar() {
                 <div className="collapse navbar-collapse " >
                     <ul className="navbar-nav ms-auto ">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Home</a>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./pages/productos.html">Productos</a>
+                            <a className="nav-link" to="productos">Productos</a>
+                        </li>
+                        
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/login">Login</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./pages/recetas.html">Recetas</a>
+                            <Link className="nav-link" to="./about">About</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./pages/login.html">Login</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="./pages/about.html">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="./pages/carrito.html"><i className="fa-solid fa-cart-shopping"></i> <span className="badge bg-danger rounded-pill " id="carrito-box"></span></a>
+                            <a className="nav-link" to="/carrito"><i className="fa-solid fa-cart-shopping"></i> <span className="badge bg-danger rounded-pill " id="carrito-box"></span></a>
                         </li>
                     </ul>
                 </div>

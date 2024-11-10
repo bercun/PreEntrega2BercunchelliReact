@@ -1,12 +1,12 @@
 
 
-function Item({ productosEn, productosPr }) {
+function Item({ productos, }) {
     return (
         <>
             <div className="container">
                 <h2>Entrantes</h2>
                 <div className="row">
-                    {productosEn.map((producto) => (
+                    {productos.map((producto) => (
                         <div key={producto.id} className="col-12 col-md-6 col-lg-4 mb-4">
                             <div className="card h-100">
                                 <img src={producto.img} alt="imagen" className="card-img-top img-fluid" style={{ width: '10rem', height: 'auto' }} />
@@ -23,7 +23,7 @@ function Item({ productosEn, productosPr }) {
                 
             </div>
             <hr />
-            <div className="container">
+            {/* <div className="container">
                 <h2>Principales</h2>
                 <div className="row">
                     {productosPr.map((producto) => (
@@ -40,7 +40,7 @@ function Item({ productosEn, productosPr }) {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }
