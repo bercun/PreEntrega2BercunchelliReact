@@ -13,7 +13,7 @@ function NavBar() {
                     data-bs-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse " id="collapsibleNavbar">
+                <div className="collapse navbar-collapse " >
                     <ul className="navbar-nav ms-auto ">
                         <li className="nav-item">
                             <a className="nav-link" href="#">Home</a>
