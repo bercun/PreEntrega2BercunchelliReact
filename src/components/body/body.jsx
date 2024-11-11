@@ -7,12 +7,13 @@ import About from "../pages/About";
 import Login from "../pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
+import ItemDetail from "./Main/Item/ItemDetail";
 
 
 function Body() {
     return (
         <>
-        <BrowserRouter>
+        {/* <BrowserRouter>
         
             <NavBar />
             
@@ -27,7 +28,8 @@ function Body() {
             
             <Footer />  
         
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <ItemDetail id={2}/>
         </>
 
     );

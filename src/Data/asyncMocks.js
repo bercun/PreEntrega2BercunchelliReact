@@ -67,10 +67,10 @@
         "precio": 560,
         "categoria": "principal" },
     { 
-        "id": 10, "nombre": 
-        "Lasaña de pollo y verduras", 
-        "img": "./img/logoObrador.png", "descripcion": 
-        "Lasaña artesanal, de supremas de pollos cocidas al tomillo y verduras de temporada", 
+        "id": 10, 
+        "nombre": "Lasaña de pollo y verduras", 
+        "img": "./img/logoObrador.png", 
+        "descripcion": "Lasaña artesanal, de supremas de pollos cocidas al tomillo y verduras de temporada", 
         "precio": 250,
         "categoria": "principal" },
     { 
@@ -100,11 +100,12 @@ export const productosEnLoad = () => {
 };
 
 
- export const productosById = ({id}) => { 
+ export const productosById = (id) => { 
         const productosid = productos.find(producto => producto.id === id);
      return new Promise((resolve, reject) => {
          setTimeout(() => {
              resolve(productosid);
+             reject("No se encontro el producto");
          }, 500);
      });
  }
