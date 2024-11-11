@@ -20,7 +20,8 @@ function Body() {
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={<About />} />
                 <Route path="/productos" element={<ItemContainer />} />
-                <Route path="/login" element={<Login/>} /> 
+                <Route path="/login" element={<Login/>} />
+                <Route path="/detalle:id" element={<Item  />} />
             </Routes>
 
             
