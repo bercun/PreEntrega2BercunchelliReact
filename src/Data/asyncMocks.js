@@ -110,7 +110,7 @@ export const productosEnLoad = () => {
      });
  }
 
- export const productosByCategoria = ({categoria}) => { 
+ export const productosByCategoria = (categoria) => { 
     const productosCategoria = productos.filter(producto => producto.categoria === categoria);
     return new Promise((resolve, reject) => {
         setTimeout(() => {

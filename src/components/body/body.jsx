@@ -8,31 +8,37 @@ import Login from "../pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import ItemDetail from "./Main/Item/ItemDetail";
+import ItemCategoria from "./Main/Item/ItemCategoria";
 
 
 function Body() {
     return (
         <>
-        {/* <BrowserRouter>
+        <BrowserRouter>
         
             <NavBar />
             
-            <Routes>
+            {/* <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={<About />} />
                 <Route path="/productos" element={<ItemContainer />} />
                 <Route path="/login" element={<Login/>} />
-                <Route path="/detalle:id" element={<Item  />} />
-            </Routes>
+            </Routes> */}
+
+        <ItemCategoria categoria="entrantes" />
+               
 
             
             <Footer />  
         
-        </BrowserRouter> */}
-        <ItemDetail id={2}/>
+        </BrowserRouter>
+        {/* <ItemDetail id={2}/> */}
         </>
 
     );
 }
 
 export default Body;
+
+
+ {/* <Route path="/detalle:id" element=<ItemDetail id={2} /> /> */}

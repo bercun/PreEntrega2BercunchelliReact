@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { productosById } from "../../../../Data/asyncMocks";
  
-import React from 'react'
+
 
 const ItemDetail = ({id}) => {
   const [item, setItem] = useState({});

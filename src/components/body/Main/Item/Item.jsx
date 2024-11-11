@@ -16,7 +16,7 @@ function Item({ productos, }) {
                                     <p className="card-text">{producto.precio}</p>
                                     <button className="btn btn-primary" style={{margin: '0.5rem'}}>Comprar</button>
                                     <button className="btn btn-primary">detalle</button>
-                                    <button className="btn btn-primary" style={{margin: '0.5rem'}}>categoria</button>
+                                    {/* <button className="btn btn-primary" style={{margin: '0.5rem'}}>categoria</button> */}
                                 </div>
                             </div>
                         </div>

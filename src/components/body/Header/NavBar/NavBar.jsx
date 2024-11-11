@@ -21,6 +21,9 @@ function NavBar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="productos">Productos</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="productos">Categorias</Link>
+                        </li>
                         
                         <li className="nav-item">
                             <Link className="nav-link" to="/login">Login</Link>
