@@ -8,8 +8,7 @@ function ItemContainer() {
    <>
     
     <ItemListContainer/>
-    <ItemCategoria categoria="entrantes" />
-    
+   
    </>
   )
 }

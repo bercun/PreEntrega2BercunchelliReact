@@ -8,7 +8,7 @@ function NavBar() {
         <nav className="navbar navbar-expand-sm  navbar-dark">
             
             <div className="container-fluid">
-                <a className="navbar-brand" href="#"><img src="./img/icono_obrador.png" alt="icono sin fondo"/>El Obrador</a>
+                <Link className="navbar-brand" to="/"><img src="./img/icono_obrador.png" alt="icono sin fondo"/>El Obrador</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>

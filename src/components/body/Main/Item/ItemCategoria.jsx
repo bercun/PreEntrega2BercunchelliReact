@@ -24,7 +24,7 @@ const ItemCategoria = ({categoria}) => {
   return (
    <>
 
-    <h1 style={{margin:"1rem"}}>Categorias</h1>
+    {/* <h1 style={{margin:"1rem"}}>Categorias</h1> */}
     <div className="container"></div>
       <div className="row">
         <div className="col-12">
