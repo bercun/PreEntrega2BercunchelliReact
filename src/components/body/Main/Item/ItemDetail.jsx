@@ -3,28 +3,25 @@ import { productosById } from "../../../../Data/asyncMocks";
  
 
 
-const ItemDetail = ({id}) => {
-  const [item, setItem] = useState({});
+const ItemDetail = ({item}) => {
 
-  useEffect(() => {
-    productosById(id).then((data) => {
-      setItem(data);
-    });
-  }, [id]);  
-  
+ console.log(item)
 
+ if (!item || !item.img) {
+  return <p>Loading...</p>;
+}
 
-  
   
   return (
 
     <>
+      
     <h1 style={{margin:"1rem"}}>Detalle del producto</h1>
     
       <div className="card mb-3" style={{ maxWidth: '540px', margin: "2rem"}}>
         <div className="row g-0">
           <div className="col-md-4">
-            <img src={item.img} className="img-fluid rounded-start" alt="..."/>
+          <img src={item.img} alt="imagen" className="card-img-top img-fluid" style={{ width: '10rem', height: 'auto' }} />
           </div>
           <div className="col-md-8">
             <div className="card-body">

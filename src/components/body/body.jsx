@@ -1,14 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// estilos
 import "./body.css";
+// Pages
+import Home from "../pages/Home";
 import Footer from "./Footer/Footer";
 import NavBar from "./Header/NavBar/NavBar";
-import ItemContainer from "./Main/ItemContainer/ItemContainer";
 import About from "../pages/About";
 import Login from "../pages/Login";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import ItemDetail from "./Main/Item/ItemDetail";
+// Productos
+import ItemContainer from "./Main/ItemContainer/ItemContainer";
+
+
+import ItemContainerDetail from "./Main/ItemContainer/ItemContainerDetail";
 import ItemCategoria from "./Main/Item/ItemCategoria";
+// import Carrito from "./Header/Carrito/Carrito";
+
+
 
 
 function Body() {
@@ -18,14 +26,20 @@ function Body() {
         
             <NavBar />
             
-            {/* <Routes>
+            <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={<About />} />
-                <Route path="/productos" element={<ItemContainer />} />
+                <Route path="/productos" element={<ItemContainer/>} />
                 <Route path="/login" element={<Login/>} />
-            </Routes> */}
+                {/* navegacion */}
+                <Route path="/detail/:id" element={<ItemContainerDetail/>} />
+                <Route path="/categoria/:categoria" element={<ItemCategoria/>} />
+                <Route path="*" element={<h1>404 Not Found</h1>} />
+                {/* <Route path="/carrito" element={<Carrito/>}/> */}
 
-        <ItemCategoria categoria="entrantes" />
+            </Routes>
+
+        
                
 
             

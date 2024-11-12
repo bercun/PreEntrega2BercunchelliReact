@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function Item({ productos, }) {
     return (
@@ -15,7 +15,7 @@ function Item({ productos, }) {
                                     <p className="card-text">{producto.descripcion}</p>
                                     <p className="card-text">{producto.precio}</p>
                                     <button className="btn btn-primary" style={{margin: '0.5rem'}}>Comprar</button>
-                                    <button className="btn btn-primary">detalle</button>
+                                    <Link className="btn btn-primary" to={`/detail/${producto.id}`}>detalle</Link>
                                     {/* <button className="btn btn-primary" style={{margin: '0.5rem'}}>categoria</button> */}
                                 </div>
                             </div>
