@@ -13,7 +13,7 @@ import ItemContainer from "./Main/ItemContainer/ItemContainer";
 
 
 import ItemContainerDetail from "./Main/ItemContainer/ItemContainerDetail";
-import ItemCategoria from "./Main/Item/ItemCategoria";
+import ItemContainerByCa from "./Main/ItemContainer/ItemContainerByCa";
 // import Carrito from "./Header/Carrito/Carrito";
 
 
@@ -33,7 +33,7 @@ function Body() {
                 <Route path="/login" element={<Login/>} />
                 {/* navegacion */}
                 <Route path="/detail/:id" element={<ItemContainerDetail/>} />
-                <Route path="/categoria/:categoria" element={<ItemCategoria/>} />
+                <Route path="/categoria/:categoria" element={<ItemContainerByCa/>} />
                 <Route path="*" element={<h1>404 Not Found</h1>} />
                 {/* <Route path="/carrito" element={<Carrito/>}/> */}
 
