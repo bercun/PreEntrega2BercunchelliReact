@@ -14,9 +14,9 @@ function Item({ productos, }) {
                                     <h3 className="card-title">{producto.nombre}</h3>
                                     <p className="card-text">{producto.descripcion}</p>
                                     <p className="card-text">{producto.precio}</p>
-                                    <button className="btn btn-primary" style={{margin: '0.5rem'}}>Comprar</button>
-                                    <Link className="btn btn-primary" to={`/detail/${producto.id}`}>detalle</Link>
-                                    {/* <button className="btn btn-primary" style={{margin: '0.5rem'}}>categoria</button> */}
+                                    <button className="btn btn-danger" style={{margin: '0.5rem'}}>Comprar</button>
+                                    <Link className="btn btn-link" to={`/detail/${producto.id}`}>detalle</Link>
+                                    <Link className="btn btn-link" style={{margin: '0.5rem'}} to={`/categoria/${producto.categoria}`}>categoria</Link>
                                 </div>
                             </div>
                         </div>

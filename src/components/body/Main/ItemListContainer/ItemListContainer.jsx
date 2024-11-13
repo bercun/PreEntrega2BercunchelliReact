@@ -12,6 +12,7 @@ function ItemListContainer() {
  const [productos, setproductos]= useState([]);
  const [id, setId]= useState(0);
  const [byCategoria, setByCategoria]= useState("");
+ const [categoria, setCategoria]= useState("");
   
  useEffect(() => {   
     productosEnLoad().then((data) => {
@@ -42,7 +43,7 @@ function ItemListContainer() {
    
     <Item productos={productos} />
     
-    <ItemCategoria byCategoria={byCategoria} />
+    <ItemCategoria categoria={categoria} />
 
     </>
   )
