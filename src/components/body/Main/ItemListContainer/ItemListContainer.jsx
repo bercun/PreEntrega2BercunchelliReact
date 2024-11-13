@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Item from "../Item/Item"
 import {productosEnLoad, productosById, productosByCategoria} from "../../../../Data/asyncMocks"
-// import ItemDetail from "../Item/ItemDetail";
+
 import ItemCategoria from "../Item/ItemCategoria";
 
 

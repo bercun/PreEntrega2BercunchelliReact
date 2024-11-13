@@ -1,4 +1,4 @@
-import ItemCategoria from '../Item/ItemCategoria'
+// import ItemCategoria from '../Item/ItemCategoria'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 
 

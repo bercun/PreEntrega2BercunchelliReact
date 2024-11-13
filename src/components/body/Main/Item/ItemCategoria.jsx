@@ -1,20 +1,13 @@
 import { useState, useEffect } from "react";
-import { productosByCategoria } from "../../../../Data/asyncMocks";
+// import { productosByCategoria } from "../../../Data/asyncMocks";
 
 
 
 const ItemCategoria = ({categoria}) => {
 
- const [byCategoria, setByCategoria]= useState([]);
-    
-      useEffect(() => {
-      productosByCategoria(categoria).then((data) => { 
-        setByCategoria(data);
-      }); 
-    }
-    , []);
+ 
 
-
+console.log(categoria)
 
 
 
@@ -24,12 +17,12 @@ const ItemCategoria = ({categoria}) => {
   return (
    <>
 
-    {/* <h1 style={{margin:"1rem"}}>Categorias</h1> */}
-    <div className="container"></div>
+    <h1 style={{margin:"1rem"}}>Por Categoria</h1>
+    <div className="container">
       <div className="row">
         <div className="col-12">
           <div className="row">
-            {byCategoria.map((item) => (
+            {categoria.map((item) => (
               <div className="col-4" key={item.id}>
                 <div className="card" style={{width: "18rem"}}>
                   <img src={item.img} className="card-img-top" alt={item.nombre} />
@@ -45,6 +38,7 @@ const ItemCategoria = ({categoria}) => {
           </div>
         </div>
       </div>
+    </div>
 
 
    

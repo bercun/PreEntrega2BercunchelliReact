@@ -34,6 +34,7 @@ function Body() {
                 {/* navegacion */}
                 <Route path="/detail/:id" element={<ItemContainerDetail/>} />
                 <Route path="/categoria/:categoria" element={<ItemContainerByCa/>} />
+                <Route path="/categoria/" element={<ItemContainerByCa/>} />
                 <Route path="*" element={<h1>404 Not Found</h1>} />
                 {/* <Route path="/carrito" element={<Carrito/>}/> */}
 
